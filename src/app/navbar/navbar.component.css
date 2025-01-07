@@ -7,7 +7,20 @@
   height: 119px;
   font-family: Arial, sans-serif;
   color: black;
+  background: transparent;
 }
+
+.navbar-container {
+  background: linear-gradient(to right, rgba(194, 147, 255, 0.6), rgba(39, 39, 40, 0.3)); /* Linear gradient */
+  border-radius: 20px; /* Corner radius */
+  padding: 10px 20px; /* Add padding around the navbar */
+  display: flex; /* Ensure it behaves like a container */
+  width: 97%; /* Adjust width to 90% of the parent container */
+  margin: 0 auto; /* Center the navbar horizontally */
+  margin-top: 25px;
+}
+a
+
 
 .navbar .logo {
   display: flex;
@@ -24,7 +37,7 @@
   list-style-type: none;
   display: flex;
   gap: 30px;
-  margin-left: auto;
+  margin-left: 1000px;
 }
 
 .navbar .nav-links li {
@@ -35,7 +48,7 @@
 
 .navbar .nav-links a {
   text-decoration: none;
-  color: black;
+  color: #fff;
   font-size: 16px;
   padding: 5px 0;
   display: inline-block;
@@ -50,7 +63,7 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #44489a;
+  background-color: #fff;
   transition: width 0.3s ease;
 }
 
@@ -82,11 +95,11 @@
 .navbar .dropdown-content {
   display: block;
   position: absolute;
-  background-color: white;
+  background: linear-gradient(to right, rgba(194, 147, 255, 0.8), rgba(39, 39, 40, 0.6)); /* Transparent linear gradient */
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  border-radius: 8px;
+  border-radius: 8px; /* Rounded corners */
   overflow: hidden;
   opacity: 0;
   transform-origin: top center;
@@ -96,7 +109,7 @@
 }
 
 .navbar .dropdown-content a {
-  color: black;
+  color: white; /* Text color */
   padding: 12px 20px;
   text-decoration: none;
   display: block;
@@ -108,23 +121,25 @@
   content: none;
 }
 
+/* Hover effect for dropdown items */
 .navbar .dropdown-content a:hover {
-  background-color: #44489a;
+  background: linear-gradient(to right, rgba(39, 39, 40, 0.8), rgba(194, 147, 255, 0.9)); /* Gradient on hover */
   color: white;
 }
 
 .navbar .dropdown.active .dropdown-content {
-  opacity: 1;
+  opacity: 1; /* Fully visible when active */
   transform: scaleY(1);
   clip-path: inset(0 0 0 0);
   margin-left: -30px;
   margin-top: 8px;
 }
 
+
 .navbar .login-button .btn {
-  color: black;
+  color: #fff;
   padding: 10px 20px;
-  border: 1px solid black;
+  border: 1px solid #fff;
   border-radius: 26px;
   text-decoration: none;
   font-size: 16px;
@@ -135,10 +150,12 @@
 }
 
 .navbar .login-button .btn:hover {
-  background-color: #44489a;
-  color: white;
-  border: 1px solid #44489a;
+  background: linear-gradient(to right, rgba(194, 147, 255, 0.9), rgba(39, 39, 40, 0.8)); /* Linear gradient */
+  color: white; /* Text color */
+  border: 1px solid rgba(194, 147, 255, 0.9); /* Matches the gradient's start color */
+  transition: all 0.3s ease; /* Smooth transition effect */
 }
+
 
 .hamburger {
   display: none;

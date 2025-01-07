@@ -1,26 +1,13 @@
-<div class="slides">
-  <div
-    class="slide"
-    [ngStyle]="{'background-image':'url('+slides[currentSlide].url +')'}"
-  ></div>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Previous Button with FontAwesome icon -->
-  <button class="prev button-56" (click)="previous()">
-    <i class="fas fa-chevron-left"></i> <!-- FontAwesome left arrow icon -->
-  </button>
 
-  <!-- Next Button with FontAwesome icon -->
-  <button class="next button-56" (click)="next()">
-    <i class="fas fa-chevron-right"></i> <!-- FontAwesome right arrow icon -->
-  </button>
-
-  <!-- Indicators -->
-  <div id="indicators">
-    <div
-      *ngFor="let slide of slides; index as i"
-      class="indicator"
-      [class.active]="i === currentSlide"
-      (click)="goToSlide(i)"
-    ></div>
+<div class="hero-container">
+  <div class="hero-text">
+    <span>We Create Mobile and Web</span>
+    <span>Apps So Users Can Enjoy</span>
+    <span>Their Lives On The Go</span>
+  </div>
+  <div class="hero-image">
+    <img src="../../assets/iPhone 15 Pro (1).png">
   </div>
 </div>

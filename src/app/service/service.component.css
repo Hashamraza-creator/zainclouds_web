@@ -1,0 +1,37 @@
+.container-service {
+  width: 1890px;
+  height: 98vh;
+  margin-top: 500px;
+  display: flex;
+
+  align-items: flex-start; /* Align content to the top */
+  flex-direction: column; /* Stack elements vertically */
+  border: 2px solid #000; /* Border for the container */
+
+}
+
+.service-content {
+  text-align: center;
+}
+
+.service-title {
+  font-size: 36px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 750px;
+}
+
+.service-description {
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #fff;
+  margin-left: 740px;
+
+}

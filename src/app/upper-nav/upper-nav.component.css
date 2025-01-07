@@ -7,7 +7,8 @@
   padding: 10px 20px;
   font-family: Arial, sans-serif;
   gap: 40px; /* Add spacing between the nav items */
-  position: relative; /* Ensure animation stays within bounds */
+  position: relative;
+ background: transparent;
 }
 
 .nav-item {
