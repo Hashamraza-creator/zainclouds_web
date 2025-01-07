@@ -1,0 +1,31 @@
+<nav class="navbar">
+  <div class="logo">
+    <img src="../../assets/logo2.png" alt="Zain Clouds Logo" />
+    <!-- <span>Zain Clouds</span> -->
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Services</a></li>
+    <li><a href="#about">Contact</a></li>
+
+    <!-- Dropdown for Others -->
+    <li class="dropdown" [class.active]="isDropdownOpen">
+      <a href="javascript:void(0)" class="dropbtn" (click)="toggleDropdown()">
+        Others
+        <i class="fas fa-caret-down arrow-icon" [class.rotate]="isDropdownOpen"></i>
+      </a>
+      <div class="dropdown-content" *ngIf="isDropdownOpen">
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms-condition">Terms & Conditions</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="login-button">
+    <a href="#login" class="btn">Login</a>
+  </div>
+  <div class="hamburger" (click)="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>

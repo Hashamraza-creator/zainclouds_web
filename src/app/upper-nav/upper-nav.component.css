@@ -1,0 +1,48 @@
+.upper-nav {
+  background-color: #44489a;
+  color: white;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  gap: 40px; /* Add spacing between the nav items */
+  position: relative; /* Ensure animation stays within bounds */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Add spacing between the icon and text inside each nav-item */
+}
+
+.nav-item i {
+  font-size: 18px;
+  color: white;
+}
+
+.nav-item span {
+  font-size: 16px;
+  color: white;
+}
+
+/* Animated Welcome Text */
+.welcome-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  right: -100%;
+  animation: slideIn 2s ease-out forwards;
+}
+
+
+@keyframes slideIn {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

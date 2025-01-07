@@ -20,16 +20,27 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
+
             "assets": [
               {
+
                 "glob": "**/*",
                 "input": "public"
-              }
+
+
+              },
+              "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/slick-carousel/slick/slick.css",
+  "node_modules/slick-carousel/slick/slick-theme.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/slick-carousel/slick/slick.min.js"
+
+            ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -97,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f1c1c7b4-def0-483f-8a29-2e305e9bd21a"
   }
 }

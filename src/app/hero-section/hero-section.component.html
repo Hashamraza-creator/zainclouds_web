@@ -1,0 +1,26 @@
+<div class="slides">
+  <div
+    class="slide"
+    [ngStyle]="{'background-image':'url('+slides[currentSlide].url +')'}"
+  ></div>
+
+  <!-- Previous Button with FontAwesome icon -->
+  <button class="prev button-56" (click)="previous()">
+    <i class="fas fa-chevron-left"></i> <!-- FontAwesome left arrow icon -->
+  </button>
+
+  <!-- Next Button with FontAwesome icon -->
+  <button class="next button-56" (click)="next()">
+    <i class="fas fa-chevron-right"></i> <!-- FontAwesome right arrow icon -->
+  </button>
+
+  <!-- Indicators -->
+  <div id="indicators">
+    <div
+      *ngFor="let slide of slides; index as i"
+      class="indicator"
+      [class.active]="i === currentSlide"
+      (click)="goToSlide(i)"
+    ></div>
+  </div>
+</div>
