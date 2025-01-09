@@ -1,12 +1,17 @@
 .container-service {
-  width: 1890px;
-  height: 98vh;
-  margin-top: 500px;
+  width: 1865px;
+  height: 1940px;
+  position: relative;
+  top: -255px;
+  left: 26px;
+  border-radius: 20px;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;  /* Align items from the left */
+  padding: 20px;
+  overflow: hidden;
+  margin-top: 350px;
 
-  align-items: flex-start; /* Align content to the top */
-  flex-direction: column; /* Stack elements vertically */
-  border: 2px solid #000; /* Border for the container */
 
 }
 
@@ -20,10 +25,9 @@
   font-weight: 700;
   margin-bottom: 20px;
   color: #fff;
-  margin-top: 5px;
   align-items: center;
-  justify-content: center;
-  margin-left: 750px;
+  margin-left: 70px;
+  margin-top: -190px;
 }
 
 .service-description {
@@ -32,6 +36,142 @@
   font-weight: 400;
   margin-top: 10px;
   color: #fff;
-  margin-left: 740px;
+  margin-left: 70px;
+  align-items: center;
+}
 
+.rectangle1, .rectangle2, .rectangle3 {
+  width: 463px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  background: rgba(217, 217, 217, 0.10);
+  box-shadow: -32.27px 32.27px 32.27px rgba(255, 255, 255, 0.10) inset;
+  border-radius: 20px;
+  border: 1px solid #E6E6E6;
+  backdrop-filter: blur(64.53px);
+  margin-top: 110px;
+  display: inline-block;
+  margin-left: 80px;
+  overflow: hidden; /* Ensures image does not overflow rectangle */
+  position: relative; /* Allows better control of child elements like images */
+}
+
+/* Space between the two rectangles */
+.rectangle1 {
+  margin-right: 70px; /* Creates the gap between the rectangles */
+}
+.rectangle2 {
+  margin-right: 70px; /* Creates the gap between the rectangles */
+}
+
+/* Styling for images inside rectangles */
+.rectangle1 img{
+  width: 196px; /* Ensures image fits inside rectangle width */
+  height: 220px; /* Ensures image fits inside rectangle height */
+  object-fit: cover; /* Ensures image scales and crops properly */
+  border-radius: 20px; /* Matches rectangle's border-radius */
+}
+.rectangle2 img {
+  width: 99px; /* Ensures image fits inside rectangle width */
+  height: 211px; /* Ensures image fits inside rectangle height */
+  object-fit:contain; /* Ensures image scales and crops properly */
+  border-radius: 20px; /* Matches rectangle's border-radius */
+  margin-top: 18px;
+}
+.rectangle3 img{
+  width: 294px;
+  height: 226px;
+  margin-top: 18px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.rectangle1 h4{
+  color: #fff;
+  size: 40px;
+font-weight: bold;
+font-family: 'Inter', sans-serif;
+margin-top: 33px;
+}
+.rectangle2 h4{
+  color: #fff;
+  size: 40px;
+font-weight: bold;
+font-family: 'Inter', sans-serif;
+margin-top: 26px;
+}
+.rectangle3 h4{
+  color: #fff;
+  size: 40px;
+font-weight: bold;
+font-family: 'Inter', sans-serif;
+margin-top: 11px;
+}
+.Service-text {
+  display: flex; /* Enables horizontal alignment of text and image */
+  align-items: center; /* Vertically aligns the text and image */
+  gap: 90px; /* Adds spacing between the text and the image */
+  color: white;
+  font-size: 60px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 120px;
+  word-wrap: break-word;
+  margin-top: 39px;
+  text-align: left;
+  margin-left: 72px;
+  width: auto; /* Adjusts width dynamically */
+  height: auto; /* Adjusts height dynamically */
+}
+
+.Service-text img {
+  display: block; /* Ensures the image is treated as a block element */
+  width: 900px; /* Keeps the image width fixed */
+  height: 660px; /* Keeps the image height fixed */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+.ending-text h4 {
+  color: white; /* Default color for the text */
+  font-size: 18px; /* Adjust font size if needed */
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  margin-top: 115pxpx;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.license-label {
+  color: #FFD700; /* Gold color for "License No" */
+  font-weight: 600; /* Optional: Make it bold */
+}
+
+.license-number {
+  color: #1E90FF; /* Dodger blue color for the license number */
+  font-weight: bold; /* Optional: Make it bold */
+}
+
+.rectangle4{
+  width: 800px;
+  height: 168px;
+  background: rgba(0, 0, 0, 0.10);
+  box-shadow: -32.266666412353516px 32.266666412353516px 32.266666412353516px rgba(255, 255, 255, 0.10) inset;
+  border-radius: 25px;
+  border: 1px #E6E6E6 solid;
+  backdrop-filter: blur(64.53px);
+  margin-top: 200px;
+  margin-left: 524px;
+}
+.rectangle4 h3{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+.main-text  h4{
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  margin-top: 30px;
 }

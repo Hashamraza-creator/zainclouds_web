@@ -1,8 +1,8 @@
 .hero-container {
   width: 1865px;
-  height: 437px;
+  height: 820px;
   position:relative;
-  top: 226px;
+  top: 10px;
   left: 26px;
   border-radius: 20px;
   display: flex;
@@ -10,6 +10,7 @@
   justify-content: space-between;
   padding: 20px;
   overflow: hidden;
+
 }
 
 @keyframes slideInText {
@@ -58,6 +59,7 @@
   flex-shrink: 0;
   margin-top: -140px;
   margin-left: -10px;
+  z-index: 1;
   animation: slideInImage 1s ease-out forwards;
 }
 

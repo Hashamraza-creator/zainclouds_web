@@ -9,11 +9,13 @@ import { CommonModule } from '@angular/common';  // Import CommonModule for *ngI
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  menuActive = false;
+  ismenuActive = false;
   isDropdownOpen = false;
 
+  isMenuOpen = false;
+
   toggleMenu() {
-    this.menuActive = !this.menuActive;
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
   toggleDropdown() {

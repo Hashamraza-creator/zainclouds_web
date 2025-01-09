@@ -1,0 +1,121 @@
+.process-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: -364px;
+
+}
+
+.Rectangle-process {
+  width: 1470px;
+  height: 753px;
+  background: rgba(0, 0, 0, 0.10);
+  box-shadow: -32.266666412353516px 32.266666412353516px 32.266666412353516px rgba(255, 255, 255, 0.10) inset;
+  border-radius: 20px;
+  border: 1px #E6E6E6 solid;
+  backdrop-filter: blur(64.53px);
+}
+
+.Rectangle-process img {
+  width: 808px;
+  height: 863px;
+  margin-top: -30px;
+  margin-left: 350px;
+}
+
+.image-text-container {
+  margin-top: -648px; /* Adds some spacing above the container */
+  display: flex;
+  flex-direction: column; /* Stacks the image and text vertically */
+  align-items: flex-start; /* Aligns both to the left */
+}
+
+.image-text-container img {
+  width: 94px;
+  height: 93px;
+  margin-left: 100px;
+  position: relative; /* Ensures proper positioning */
+}
+
+.image-text-container h4 {
+  font-size: 16px; /* Adjusts the font size */
+  color: #fff; /* Sets the text color */
+  font-family: 'Arial', sans-serif; /* Sets the font */
+  margin-top: 10px; /* Adds spacing between the image and text */
+  margin-left: 64px; /* Aligns text with the image */
+  text-align: left; /* Ensures text is aligned to the left */
+  word-wrap: break-word; /* Prevents text overflow */
+}
+.image-text-container1 {
+  margin-top: 352px; /* Adds some spacing above the container */
+  display: flex;
+  flex-direction: column; /* Stacks the image and text vertically */
+  align-items: flex-start; /* Aligns both to the left */
+}
+
+.image-text-container1 img {
+  width: 94px;
+  height: 93px;
+  margin-left: 100px;
+  position: relative; /* Ensures proper positioning */
+}
+
+.image-text-container1 h4 {
+  font-size: 16px; /* Adjusts the font size */
+  color: #fff; /* Sets the text color */
+  font-family: 'Arial', sans-serif; /* Sets the font */
+  margin-top: 10px; /* Adds spacing between the image and text */
+  margin-left: 96px; /* Aligns text with the image */
+  text-align: left; /* Ensures text is aligned to the left */
+  word-wrap: break-word; /* Prevents text overflow */
+}
+.image-text-container2 {
+  margin-top: -543px; /* Adds some spacing above the container */
+  display: flex;
+  margin-right: 96px;
+  flex-direction: column; /* Stacks the image and text vertically */
+  align-items: flex-end; /* Aligns both to the left */
+}
+
+.image-text-container2 img {
+  width: 94px;
+  height: 93px;
+  margin-left: 100px;
+  position: relative; /* Ensures proper positioning */
+}
+
+.image-text-container2 h4 {
+  font-size: 16px; /* Adjusts the font size */
+  color: #fff; /* Sets the text color */
+  font-family: 'Arial', sans-serif; /* Sets the font */
+  margin-top: 10px; /* Adds spacing between the image and text */
+  margin-right: -26px; /* Aligns text with the image */
+  text-align: left; /* Ensures text is aligned to the left */
+  word-wrap: break-word; /* Prevents text overflow */
+}
+.image-text-container3 {
+  margin-top: 352px; /* Adds some spacing above the container */
+  display: flex;
+  margin-right: 96px;
+  flex-direction: column; /* Stacks the image and text vertically */
+  align-items: flex-end; /* Aligns both to the left */
+}
+
+.image-text-container3 img {
+  width: 94px;
+  height: 93px;
+  margin-left: 100px;
+  position: relative; /* Ensures proper positioning */
+}
+
+.image-text-container3 h4 {
+  font-size: 16px; /* Adjusts the font size */
+  color: #fff; /* Sets the text color */
+  font-family: 'Arial', sans-serif; /* Sets the font */
+  margin-top: 10px; /* Adds spacing between the image and text */
+  margin-right: -5px; /* Aligns text with the image */
+  text-align: left; /* Ensures text is aligned to the left */
+  word-wrap: break-word; /* Prevents text overflow */
+}
