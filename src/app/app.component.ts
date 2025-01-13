@@ -5,11 +5,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { ServiceComponent } from './service/service.component';
 import { ProcessComponent } from './process/process.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
+
     UpperNavComponent,
     NavbarComponent,
     HeroSectionComponent,
@@ -19,6 +21,4 @@ import { ProcessComponent } from './process/process.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-
-}
+export class AppComponent {}

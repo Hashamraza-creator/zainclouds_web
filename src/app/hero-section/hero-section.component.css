@@ -1,7 +1,7 @@
 .hero-container {
   width: 1865px;
   height: 820px;
-  position:relative;
+  position: relative;
   top: 10px;
   left: 26px;
   border-radius: 20px;
@@ -10,34 +10,11 @@
   justify-content: space-between;
   padding: 20px;
   overflow: hidden;
-
-}
-
-@keyframes slideInText {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInImage {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 .hero-text {
   width: 1072px;
-  height: 359px;
+  height: 363px;
   flex-shrink: 0;
   color: #FFF;
   font-family: 'Inter', sans-serif;
@@ -45,8 +22,21 @@
   font-weight: 700;
   margin-left: 30px;
   line-height: 133px;
-  animation: slideInText 1s ease-out forwards;
+  display: block;
+  overflow: hidden; /* Ensure content stays within bounds during animation */
 }
+.gradient-container {
+  position: relative;
+  width: 600px;
+  height: 408px;
+  margin-right: 80px;
+  border-radius: 15px; /* Optional: smooth corners */
+  background: rgba(50, 248, 255, 0.1); /* Light transparent fog-like effect */
+  box-shadow: 0 10px 30px rgba(50, 248, 255, 0.5); /* Soft fog shadow with the color #32F8FF */
+  background-size: cover;
+}
+
+
 
 .hero-text span {
   display: block;
@@ -57,11 +47,12 @@
   height: 437px;
   border-radius: 20px;
   flex-shrink: 0;
-  margin-top: -140px;
-  margin-left: -10px;
+  margin-top: -89px;
+  margin-left: -61px;
   z-index: 1;
-  animation: slideInImage 1s ease-out forwards;
 }
+
+
 
 @media (max-width: 768px) {
   .hero-container {
